@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "6aa971bfcdef61f156ab9fa9",
+    "nombre": "Prof. Gabriel Salazar",
+    "email": "gabriel.salazar@universidad.edu",
+    "password": "$2b$10$RMdyRdFPQzga8fWaBqQFeeIBbRwMtDpb3C4/1dTNz/0DdVws.h9.W",
+    "area": "Inteligencia Artificial",
+    "telefono": "",
+    "activo": true,
+    "createdAt": "2026-09-15T16:26:39.806Z",
+    "updatedAt": "2026-09-15T16:26:39.806Z",
+    "__v": 0
+  },
+  {
+    "_id": "65f9a1b2c3d4e5f6a7b8c901",
+    "nombre": "Dra. Carmen Valenzuela",
+    "email": "carmen.valenzuela@universidad.edu",
+    "password": "$2b$10$sM.3QAj2L/w4sSumvY8G8eUiyHUCMyCDAv023s.OgyKtjtxiOeB3O",
+    "area": "Ciencias de la Computación",
+    "telefono": "+52 55 1234 5678",
+    "activo": true,
+    "createdAt": "2026-09-10T16:26:35.141Z",
+    "updatedAt": "2026-09-10T16:26:35.141Z",
+    "__v": 0
+  },
+  {
+    "_id": "65f9a1b2c3d4e5f6a7b8c902",
+    "nombre": "Dr. Alejandro Morales",
+    "email": "alejandro.morales@universidad.edu",
+    "password": "$2b$10$sM.3QAj2L/w4sSumvY8G8eUiyHUCMyCDAv023s.OgyKtjtxiOeB3O",
+    "area": "Matemáticas y Física",
+    "telefono": "+52 55 8765 4321",
+    "activo": true,
+    "createdAt": "2026-09-13T16:26:35.141Z",
+    "updatedAt": "2026-09-13T16:26:35.141Z",
+    "__v": 0
+  }
+]
