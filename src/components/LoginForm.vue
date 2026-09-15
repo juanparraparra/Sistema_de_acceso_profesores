@@ -7,7 +7,7 @@
       </div>
       <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">Acceso de Profesores</h3>
       <p class="text-xs text-slate-500 mt-1">
-        Prueba B: Autenticar el profesor y recibir token JWT válido
+        Ingresa tus credenciales para acceder al portal
       </p>
     </div>
 

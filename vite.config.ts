@@ -1,3 +1,13 @@
+import crypto from 'node:crypto';
+
+// Polyfill for Node.js < 21.7 (Node 18/20) where crypto.hash does not exist
+if (typeof (crypto as any).hash !== 'function') {
+  (crypto as any).hash = (algo: string, data: any, enc?: any) => {
+    const h = crypto.createHash(algo).update(data);
+    return enc ? h.digest(enc) : h.digest('hex');
+  };
+}
+
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';

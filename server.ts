@@ -1,3 +1,13 @@
+import crypto from 'node:crypto';
+
+// Polyfill for Node.js < 21.7 (Node 18/20) where crypto.hash does not exist
+if (typeof (crypto as any).hash !== 'function') {
+  (crypto as any).hash = (algo: string, data: any, enc?: any) => {
+    const h = crypto.createHash(algo).update(data);
+    return enc ? h.digest(enc) : h.digest('hex');
+  };
+}
+
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
@@ -55,7 +65,8 @@ async function startServer() {
   }
 
   app.listen(PORT, HOST, () => {
-    console.log(`[Server] Servidor backend ejecutándose en http://${HOST}:${PORT}`);
+    console.log(`\n  ➜ Local:   http://localhost:${PORT}/`);
+    console.log(`  ➜ Network: http://127.0.0.1:${PORT}/\n`);
   });
 }
 
